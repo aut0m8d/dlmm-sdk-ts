@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@coral-xyz/anchor':
-    specifier: github:aut0m8d/anchor-ts#7b4ebf3ac7d4d10c4b1378ce9734534112c54c51
-    version: github.com/aut0m8d/anchor-ts/7b4ebf3ac7d4d10c4b1378ce9734534112c54c51
+    specifier: github:aut0m8d/anchor-ts#68803fcaf315d7a717d0bb389b4ac6f796a0787d
+    version: github.com/aut0m8d/anchor-ts/68803fcaf315d7a717d0bb389b4ac6f796a0787d
   '@solana/buffer-layout':
     specifier: ^4.0.1
     version: 4.0.1
@@ -4525,8 +4525,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  github.com/aut0m8d/anchor-ts/7b4ebf3ac7d4d10c4b1378ce9734534112c54c51:
-    resolution: {tarball: https://codeload.github.com/aut0m8d/anchor-ts/tar.gz/7b4ebf3ac7d4d10c4b1378ce9734534112c54c51}
+  github.com/aut0m8d/anchor-ts/68803fcaf315d7a717d0bb389b4ac6f796a0787d:
+    resolution: {tarball: https://codeload.github.com/aut0m8d/anchor-ts/tar.gz/68803fcaf315d7a717d0bb389b4ac6f796a0787d}
     name: '@coral-xyz/anchor'
     version: 0.28.0
     engines: {node: '>=11'}

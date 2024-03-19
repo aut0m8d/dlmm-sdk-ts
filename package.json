@@ -31,7 +31,7 @@
     "typescript": "^5.0.4"
   },
   "dependencies": {
-    "@coral-xyz/anchor": "https://github.com/aut0m8d/anchor-ts.git#19f2e97c3bc96505c27ca30e63ba19b8555c3d6f",
+    "@coral-xyz/anchor": "github:aut0m8d/anchor-ts#b863ce30b6f08c8ece42255e8809fcb93ffaa169",
     "@solana/buffer-layout": "^4.0.1",
     "@solana/spl-token": "0.3.5",
     "@solana/web3.js": "~1.78.3",

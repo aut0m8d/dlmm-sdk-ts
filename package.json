@@ -33,7 +33,7 @@
     "@coral-xyz/anchor": "github:aut0m8d/anchor-ts#68803fcaf315d7a717d0bb389b4ac6f796a0787d",
     "@solana/buffer-layout": "^4.0.1",
     "@solana/spl-token": "0.3.5",
-    "@solana/web3.js": "~1.78.3",
+    "@solana/web3.js": "github:aut0m8d/solana-web3.js#f8988e1d7fb9b5f7f774e412f41a3b681367d2a4",
     "decimal.js": "^10.4.3",
     "gaussian": "^1.3.0"
   },

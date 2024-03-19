@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@coral-xyz/anchor':
-    specifier: github:aut0m8d/anchor-ts#68803fcaf315d7a717d0bb389b4ac6f796a0787d
-    version: github.com/aut0m8d/anchor-ts/68803fcaf315d7a717d0bb389b4ac6f796a0787d
+    specifier: github:aut0m8d/anchor-ts#dc9ba858d7139450412ade342441cf05e27313eb
+    version: github.com/aut0m8d/anchor-ts/dc9ba858d7139450412ade342441cf05e27313eb
   '@solana/buffer-layout':
     specifier: ^4.0.1
     version: 4.0.1
@@ -1270,13 +1270,13 @@ packages:
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
     dev: true
 
-  /@coral-xyz/borsh@0.28.0(@solana/web3.js@1.78.7):
+  /@coral-xyz/borsh@0.28.0(@solana/web3.js@0.0.0-development):
     resolution: {integrity: sha512-/u1VTzw7XooK7rqeD7JLUSwOyRSesPUk0U37BV9zK0axJc1q0nRbKFGFLYCQ16OtdOJTTwGfGp11Lx9B45bRCQ==}
     engines: {node: '>=10'}
     peerDependencies:
       '@solana/web3.js': ^1.68.0
     dependencies:
-      '@solana/web3.js': 1.78.7
+      '@solana/web3.js': github.com/aut0m8d/solana-web3.js/f8988e1d7fb9b5f7f774e412f41a3b681367d2a4
       bn.js: 5.2.1
       buffer-layout: 1.2.2
     dev: false
@@ -4523,14 +4523,14 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  github.com/aut0m8d/anchor-ts/68803fcaf315d7a717d0bb389b4ac6f796a0787d:
-    resolution: {tarball: https://codeload.github.com/aut0m8d/anchor-ts/tar.gz/68803fcaf315d7a717d0bb389b4ac6f796a0787d}
+  github.com/aut0m8d/anchor-ts/dc9ba858d7139450412ade342441cf05e27313eb:
+    resolution: {tarball: https://codeload.github.com/aut0m8d/anchor-ts/tar.gz/dc9ba858d7139450412ade342441cf05e27313eb}
     name: '@coral-xyz/anchor'
     version: 0.28.0
     engines: {node: '>=11'}
     dependencies:
-      '@coral-xyz/borsh': 0.28.0(@solana/web3.js@1.78.7)
-      '@solana/web3.js': 1.78.7
+      '@coral-xyz/borsh': 0.28.0(@solana/web3.js@0.0.0-development)
+      '@solana/web3.js': github.com/aut0m8d/solana-web3.js/f8988e1d7fb9b5f7f774e412f41a3b681367d2a4
       base64-js: 1.5.1
       bn.js: 5.2.1
       bs58: 4.0.1

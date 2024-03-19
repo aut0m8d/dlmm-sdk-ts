@@ -4560,27 +4560,45 @@ function derivePresetParameter(binStep, programId) {
 function deriveLbPair(tokenX, tokenY, binStep, programId) {
   const [minKey, maxKey] = sortTokenMints(tokenX, tokenY);
   return PublicKey2.findProgramAddressSync(
-    [minKey.toBuffer(), maxKey.toBuffer(), new Uint8Array(binStep.toBuffer("le", 2))],
+    [
+      minKey.toBuffer(),
+      maxKey.toBuffer(),
+      new Uint8Array(binStep.toBuffer("le", 2))
+    ],
     programId
   );
 }
 function deriveOracle(lbPair, programId) {
-  return PublicKey2.findProgramAddressSync([Buffer.from("oracle"), lbPair.toBytes()], programId);
+  return PublicKey2.findProgramAddressSync(
+    [Buffer.from("oracle"), lbPair.toBytes()],
+    programId
+  );
 }
 function derivePosition(mint, programId) {
-  return PublicKey2.findProgramAddressSync([Buffer.from("position"), mint.toBuffer()], programId);
+  return PublicKey2.findProgramAddressSync(
+    [Buffer.from("position"), mint.toBuffer()],
+    programId
+  );
 }
 function deriveBinArray(lbPair, index, programId) {
   let binArrayBytes;
   if (index.isNeg()) {
-    binArrayBytes = new Uint8Array(index.toTwos(64).toBuffer("le", 8));
+    binArrayBytes = new Uint8Array(
+      index.toTwos(64).toArrayLike(Buffer, "le", 8)
+    );
   } else {
-    binArrayBytes = new Uint8Array(index.toBuffer("le", 8));
+    binArrayBytes = new Uint8Array(index.toArrayLike(Buffer, "le", 8));
   }
-  return PublicKey2.findProgramAddressSync([Buffer.from("bin_array"), lbPair.toBytes(), binArrayBytes], programId);
+  return PublicKey2.findProgramAddressSync(
+    [Buffer.from("bin_array"), lbPair.toBytes(), binArrayBytes],
+    programId
+  );
 }
 function deriveReserve(token, lbPair, programId) {
-  return PublicKey2.findProgramAddressSync([lbPair.toBuffer(), token.toBuffer()], programId);
+  return PublicKey2.findProgramAddressSync(
+    [lbPair.toBuffer(), token.toBuffer()],
+    programId
+  );
 }
 
 // src/dlmm/helpers/binArray.ts

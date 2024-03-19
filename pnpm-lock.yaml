@@ -6,17 +6,17 @@ settings:
 
 dependencies:
   '@coral-xyz/anchor':
-    specifier: github:aut0m8d/anchor-ts#c336cb9aa0f8630682c7d085ac741e193ee0b2c0
-    version: github.com/aut0m8d/anchor-ts/c336cb9aa0f8630682c7d085ac741e193ee0b2c0
+    specifier: github:aut0m8d/anchor-ts#cd54f74086b2776cff4260774372b352a4a68199
+    version: github.com/aut0m8d/anchor-ts/cd54f74086b2776cff4260774372b352a4a68199
   '@solana/buffer-layout':
     specifier: ^4.0.1
     version: 4.0.1
   '@solana/spl-token':
     specifier: 0.3.5
-    version: 0.3.5(@solana/web3.js@0.0.0-development)
+    version: 0.3.5(@solana/web3.js@1.78.7)
   '@solana/web3.js':
-    specifier: github:aut0m8d/solana-web3.js#0a5991b1eb49ceefa786482e8a8efd8845356d7b
-    version: github.com/aut0m8d/solana-web3.js/0a5991b1eb49ceefa786482e8a8efd8845356d7b
+    specifier: ~1.78.3
+    version: 1.78.7
   decimal.js:
     specifier: ^10.4.3
     version: 10.4.3
@@ -1270,13 +1270,13 @@ packages:
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
     dev: true
 
-  /@coral-xyz/borsh@0.28.0(@solana/web3.js@0.0.0-development):
+  /@coral-xyz/borsh@0.28.0(@solana/web3.js@1.78.7):
     resolution: {integrity: sha512-/u1VTzw7XooK7rqeD7JLUSwOyRSesPUk0U37BV9zK0axJc1q0nRbKFGFLYCQ16OtdOJTTwGfGp11Lx9B45bRCQ==}
     engines: {node: '>=10'}
     peerDependencies:
       '@solana/web3.js': ^1.68.0
     dependencies:
-      '@solana/web3.js': github.com/aut0m8d/solana-web3.js/0a5991b1eb49ceefa786482e8a8efd8845356d7b
+      '@solana/web3.js': 1.78.7
       bn.js: 5.2.1
       buffer-layout: 1.2.2
     dev: false
@@ -1827,7 +1827,7 @@ packages:
       buffer: 6.0.3
     dev: false
 
-  /@solana/spl-token@0.3.5(@solana/web3.js@0.0.0-development):
+  /@solana/spl-token@0.3.5(@solana/web3.js@1.78.7):
     resolution: {integrity: sha512-0bGC6n415lGjKu02gkLOIpP1wzndSP0SHwN9PefJ+wKAhmfU1rl3AV1Pa41uap2kzSCD6F9642ngNO8KXPvh/g==}
     engines: {node: '>=16'}
     peerDependencies:
@@ -1835,7 +1835,7 @@ packages:
     dependencies:
       '@solana/buffer-layout': 4.0.1
       '@solana/buffer-layout-utils': 0.2.0
-      '@solana/web3.js': github.com/aut0m8d/solana-web3.js/0a5991b1eb49ceefa786482e8a8efd8845356d7b
+      '@solana/web3.js': 1.78.7
       buffer: 6.0.3
     transitivePeerDependencies:
       - bufferutil
@@ -4523,14 +4523,14 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  github.com/aut0m8d/anchor-ts/c336cb9aa0f8630682c7d085ac741e193ee0b2c0:
-    resolution: {tarball: https://codeload.github.com/aut0m8d/anchor-ts/tar.gz/c336cb9aa0f8630682c7d085ac741e193ee0b2c0}
+  github.com/aut0m8d/anchor-ts/cd54f74086b2776cff4260774372b352a4a68199:
+    resolution: {tarball: https://codeload.github.com/aut0m8d/anchor-ts/tar.gz/cd54f74086b2776cff4260774372b352a4a68199}
     name: '@coral-xyz/anchor'
     version: 0.28.0
     engines: {node: '>=11'}
     dependencies:
-      '@coral-xyz/borsh': 0.28.0(@solana/web3.js@0.0.0-development)
-      '@solana/web3.js': github.com/aut0m8d/solana-web3.js/0a5991b1eb49ceefa786482e8a8efd8845356d7b
+      '@coral-xyz/borsh': 0.28.0(@solana/web3.js@1.78.7)
+      '@solana/web3.js': 1.78.7
       base64-js: 1.5.1
       bn.js: 5.2.1
       bs58: 4.0.1
@@ -4544,32 +4544,6 @@ packages:
       snake-case: 3.0.4
       superstruct: 0.15.5
       toml: 3.0.0
-    transitivePeerDependencies:
-      - bufferutil
-      - encoding
-      - utf-8-validate
-    dev: false
-
-  github.com/aut0m8d/solana-web3.js/0a5991b1eb49ceefa786482e8a8efd8845356d7b:
-    resolution: {tarball: https://codeload.github.com/aut0m8d/solana-web3.js/tar.gz/0a5991b1eb49ceefa786482e8a8efd8845356d7b}
-    name: '@solana/web3.js'
-    version: 0.0.0-development
-    dependencies:
-      '@babel/runtime': 7.23.7
-      '@noble/curves': 1.3.0
-      '@noble/hashes': 1.3.3
-      '@solana/buffer-layout': 4.0.1
-      agentkeepalive: 4.5.0
-      bigint-buffer: 1.1.5
-      bn.js: 5.2.1
-      borsh: 0.7.0
-      bs58: 4.0.1
-      buffer: 6.0.3
-      fast-stable-stringify: 1.0.0
-      jayson: 4.1.0
-      node-fetch: 2.7.0
-      rpc-websockets: 7.9.0
-      superstruct: 0.14.2
     transitivePeerDependencies:
       - bufferutil
       - encoding

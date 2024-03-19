@@ -4543,6 +4543,7 @@ function mulDiv(x, y, denominator, rounding) {
 }
 
 // src/dlmm/helpers/derive.ts
+import { Buffer as Buffer2 } from "node:buffer";
 import { PublicKey as PublicKey2 } from "@solana/web3.js";
 function sortTokenMints(tokenX, tokenY) {
   const [minKey, maxKey] = tokenX.toBuffer().compare(tokenY.toBuffer()) == 1 ? [tokenY, tokenX] : [tokenX, tokenY];
@@ -4551,7 +4552,7 @@ function sortTokenMints(tokenX, tokenY) {
 function derivePresetParameter(binStep, programId) {
   return PublicKey2.findProgramAddressSync(
     [
-      Buffer.from("preset_parameter"),
+      Buffer2.from("preset_parameter"),
       new Uint8Array(binStep.toBuffer("le", 2))
     ],
     programId
@@ -4570,13 +4571,13 @@ function deriveLbPair(tokenX, tokenY, binStep, programId) {
 }
 function deriveOracle(lbPair, programId) {
   return PublicKey2.findProgramAddressSync(
-    [Buffer.from("oracle"), lbPair.toBytes()],
+    [Buffer2.from("oracle"), lbPair.toBytes()],
     programId
   );
 }
 function derivePosition(mint, programId) {
   return PublicKey2.findProgramAddressSync(
-    [Buffer.from("position"), mint.toBuffer()],
+    [Buffer2.from("position"), mint.toBuffer()],
     programId
   );
 }
@@ -4584,13 +4585,13 @@ function deriveBinArray(lbPair, index, programId) {
   let binArrayBytes;
   if (index.isNeg()) {
     binArrayBytes = new Uint8Array(
-      index.toTwos(64).toArrayLike(Buffer, "le", 8)
+      index.toTwos(64).toArrayLike(Buffer2, "le", 8)
     );
   } else {
-    binArrayBytes = new Uint8Array(index.toArrayLike(Buffer, "le", 8));
+    binArrayBytes = new Uint8Array(index.toArrayLike(Buffer2, "le", 8));
   }
   return PublicKey2.findProgramAddressSync(
-    [Buffer.from("bin_array"), lbPair.toBytes(), binArrayBytes],
+    [Buffer2.from("bin_array"), lbPair.toBytes(), binArrayBytes],
     programId
   );
 }

@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@coral-xyz/anchor':
-    specifier: github:aut0m8d/anchor-ts#dc9ba858d7139450412ade342441cf05e27313eb
-    version: github.com/aut0m8d/anchor-ts/dc9ba858d7139450412ade342441cf05e27313eb
+    specifier: github:aut0m8d/anchor-ts#c336cb9aa0f8630682c7d085ac741e193ee0b2c0
+    version: github.com/aut0m8d/anchor-ts/c336cb9aa0f8630682c7d085ac741e193ee0b2c0
   '@solana/buffer-layout':
     specifier: ^4.0.1
     version: 4.0.1
@@ -15,8 +15,8 @@ dependencies:
     specifier: 0.3.5
     version: 0.3.5(@solana/web3.js@0.0.0-development)
   '@solana/web3.js':
-    specifier: github:aut0m8d/solana-web3.js#f8988e1d7fb9b5f7f774e412f41a3b681367d2a4
-    version: github.com/aut0m8d/solana-web3.js/f8988e1d7fb9b5f7f774e412f41a3b681367d2a4
+    specifier: github:aut0m8d/solana-web3.js#0a5991b1eb49ceefa786482e8a8efd8845356d7b
+    version: github.com/aut0m8d/solana-web3.js/0a5991b1eb49ceefa786482e8a8efd8845356d7b
   decimal.js:
     specifier: ^10.4.3
     version: 10.4.3
@@ -1276,7 +1276,7 @@ packages:
     peerDependencies:
       '@solana/web3.js': ^1.68.0
     dependencies:
-      '@solana/web3.js': github.com/aut0m8d/solana-web3.js/f8988e1d7fb9b5f7f774e412f41a3b681367d2a4
+      '@solana/web3.js': github.com/aut0m8d/solana-web3.js/0a5991b1eb49ceefa786482e8a8efd8845356d7b
       bn.js: 5.2.1
       buffer-layout: 1.2.2
     dev: false
@@ -1835,7 +1835,7 @@ packages:
     dependencies:
       '@solana/buffer-layout': 4.0.1
       '@solana/buffer-layout-utils': 0.2.0
-      '@solana/web3.js': github.com/aut0m8d/solana-web3.js/f8988e1d7fb9b5f7f774e412f41a3b681367d2a4
+      '@solana/web3.js': github.com/aut0m8d/solana-web3.js/0a5991b1eb49ceefa786482e8a8efd8845356d7b
       buffer: 6.0.3
     transitivePeerDependencies:
       - bufferutil
@@ -4523,14 +4523,14 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  github.com/aut0m8d/anchor-ts/dc9ba858d7139450412ade342441cf05e27313eb:
-    resolution: {tarball: https://codeload.github.com/aut0m8d/anchor-ts/tar.gz/dc9ba858d7139450412ade342441cf05e27313eb}
+  github.com/aut0m8d/anchor-ts/c336cb9aa0f8630682c7d085ac741e193ee0b2c0:
+    resolution: {tarball: https://codeload.github.com/aut0m8d/anchor-ts/tar.gz/c336cb9aa0f8630682c7d085ac741e193ee0b2c0}
     name: '@coral-xyz/anchor'
     version: 0.28.0
     engines: {node: '>=11'}
     dependencies:
       '@coral-xyz/borsh': 0.28.0(@solana/web3.js@0.0.0-development)
-      '@solana/web3.js': github.com/aut0m8d/solana-web3.js/f8988e1d7fb9b5f7f774e412f41a3b681367d2a4
+      '@solana/web3.js': github.com/aut0m8d/solana-web3.js/0a5991b1eb49ceefa786482e8a8efd8845356d7b
       base64-js: 1.5.1
       bn.js: 5.2.1
       bs58: 4.0.1
@@ -4550,8 +4550,8 @@ packages:
       - utf-8-validate
     dev: false
 
-  github.com/aut0m8d/solana-web3.js/f8988e1d7fb9b5f7f774e412f41a3b681367d2a4:
-    resolution: {tarball: https://codeload.github.com/aut0m8d/solana-web3.js/tar.gz/f8988e1d7fb9b5f7f774e412f41a3b681367d2a4}
+  github.com/aut0m8d/solana-web3.js/0a5991b1eb49ceefa786482e8a8efd8845356d7b:
+    resolution: {tarball: https://codeload.github.com/aut0m8d/solana-web3.js/tar.gz/0a5991b1eb49ceefa786482e8a8efd8845356d7b}
     name: '@solana/web3.js'
     version: 0.0.0-development
     dependencies:

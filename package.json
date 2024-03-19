@@ -30,10 +30,10 @@
     "typescript": "^5.0.4"
   },
   "dependencies": {
-    "@coral-xyz/anchor": "github:aut0m8d/anchor-ts#dc9ba858d7139450412ade342441cf05e27313eb",
+    "@coral-xyz/anchor": "github:aut0m8d/anchor-ts#c336cb9aa0f8630682c7d085ac741e193ee0b2c0",
     "@solana/buffer-layout": "^4.0.1",
     "@solana/spl-token": "0.3.5",
-    "@solana/web3.js": "github:aut0m8d/solana-web3.js#f8988e1d7fb9b5f7f774e412f41a3b681367d2a4",
+    "@solana/web3.js": "github:aut0m8d/solana-web3.js#0a5991b1eb49ceefa786482e8a8efd8845356d7b",
     "decimal.js": "^10.4.3",
     "gaussian": "^1.3.0"
   },

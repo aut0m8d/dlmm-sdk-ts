@@ -40,5 +40,6 @@
   },
   "keywords": [],
   "author": "McSam",
-  "license": "ISC"
+  "license": "ISC",
+  "type": "module"
 }

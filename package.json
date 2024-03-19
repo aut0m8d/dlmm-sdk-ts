@@ -3,7 +3,6 @@
   "version": "1.0.17",
   "description": "",
   "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
   "source": "./src/index.ts",
   "types": "./dist/index.d.ts",
   "files": [
@@ -31,7 +30,7 @@
     "typescript": "^5.0.4"
   },
   "dependencies": {
-    "@coral-xyz/anchor": "github:aut0m8d/anchor-ts#3cf2e869325a766e033d7b0924c6697c426c21dc",
+    "@coral-xyz/anchor": "github:aut0m8d/anchor-ts#09a8b7789192b37720279acb0ff460745f5f5148",
     "@solana/buffer-layout": "^4.0.1",
     "@solana/spl-token": "0.3.5",
     "@solana/web3.js": "~1.78.3",
@@ -40,6 +39,5 @@
   },
   "keywords": [],
   "author": "McSam",
-  "license": "ISC",
-  "type": "module"
+  "license": "ISC"
 }
